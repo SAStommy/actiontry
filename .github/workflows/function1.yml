@@ -26,7 +26,7 @@ jobs:
         uses:  wow-actions/download-upload@v1.1.0
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
-          url: E:/aptos教學/aptos_start
+          url: https://cw-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fstorage.googleapis.com%2Fwww-cw-com-tw%2Farticle%2F202210%2Farticle-63567023b3e5d.jpg/?w=630 630w, https://cw-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fstorage.googleapis.com%2Fwww-cw-com-tw%2Farticle%2F202210%2Farticle-63567023b3e5d.jpg/?w=1260 1260w, https://cw-image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fstorage.googleapis.com%2Fwww-cw-com-tw%2Farticle%2F202210%2Farticle-63567023b3e5d.jpg/?w=1600 1600w"
           filename: knowledge
           commit_message: source from web
           
