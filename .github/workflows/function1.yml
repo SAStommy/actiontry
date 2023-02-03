@@ -26,7 +26,8 @@ jobs:
         uses:  wow-actions/download-upload@v1.1.0
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
-          url: https://github.com/SAStommy/python_application
-          filename: project
+          url: E:/aptos教學/aptos_start
+          filename: knowledge
           commit_message: source from web
+          
           
