@@ -28,7 +28,7 @@ jobs:
       - name: function 
         uses:  wow-actions/download-upload@v1.1.0
         with:
-          GITHUB_TOKEN: ${{secrets.PASSWORD}}
+          GITHUB_TOKEN: ${{ secrets.PASSWORD }}
           url: https://github.com/SAStommy/python_application.git
           filename: project
           
