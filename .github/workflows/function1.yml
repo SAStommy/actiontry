@@ -26,7 +26,7 @@ jobs:
         uses:  wow-actions/download-upload@v1.1.0
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
-          url: https://storage.googleapis.com/www-cw-com-tw/article/202210/article-63567023b3e5d.jpg
+          url: https://aptoslabs.com/
           filename: knowledge
           commit_message: source from web
           
