@@ -35,6 +35,10 @@ jobs:
         with:
           file-url: https://github.com/SAStommy/python/tree/main/finalproject
           file-name: project
-          location: E:/interview
-  
+          location: /ram
+          
+      - name: download function2 file
+        uses: actions/download-artifact@v3.0.2
+        with:
+          name: project
           
