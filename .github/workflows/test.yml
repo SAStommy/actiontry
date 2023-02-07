@@ -28,7 +28,7 @@ jobs:
       - name: get aptos
         uses: pontem-network/get-aptos@v1.0.6
           
-      - name: my source
-        run: aptos init secrets.MYKEY
+      - name: airdrop
+        run: aptos account fund-with-faucet --account secrets.MYADDRESS
           
         
