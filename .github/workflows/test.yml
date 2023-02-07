@@ -28,7 +28,7 @@ jobs:
       - name: get aptos
         uses: pontem-network/get-aptos@v1.0.6
           
-      - name: my sourcw
-        run: apto init 
+      - name: my source
+        run: aptos init 
           
         
