@@ -4,7 +4,7 @@
     <title>Aptos Labs - Opening the gateway to the Aptos Network</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="uLBOkpPv57LJXH-duKZe1BtRNo_V2kV7KFgwA3yktPHBP3ytiNucVLXsGDUf12CZVl3iAjdZvbeQ4DzdoL_J_Q" />
+<meta name="csrf-token" content="PIXNwut41ley7gFmAVlHakN1W4diHZLxmZwygDBHVhcAn2vRHo-i8SWPm47SCwrSFhqgAE-AcgvQJKiRhRLWcg" />
     
 
     <meta name="description" content="Committed to developing products and applications on the Aptos blockchain that redefine the web3 user experience.">
@@ -188,7 +188,7 @@
 
       <div>
         <div class="flex flex-col gap-8">
-          <form class="flex flex-col xl:flex-row gap-2 !text-sm" data-turbo="false" target="_blank" action="https://aptoslabs.us18.list-manage.com/subscribe/post?u=5456bc936272125ed825d0218&amp;amp;id=a15b523910" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Nai6KwpCg9s_Sgiux62aC2u3q1eexZEIBrSTBidFmVpgC7cWg8Goe6x23jSb8KvFE_bsO7xnJcQZP3A_AAJ29Q" autocomplete="off" />
+          <form class="flex flex-col xl:flex-row gap-2 !text-sm" data-turbo="false" target="_blank" action="https://aptoslabs.us18.list-manage.com/subscribe/post?u=5456bc936272125ed825d0218&amp;amp;id=a15b523910" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="4WJddVxzG6UcfaAqTTD7amt_yWxlrdJ3JkieafwntAJb5edIr0rgz4pz6cmDAsxGhvDelzwZi7DEgm5wSfZIug" autocomplete="off" />
             <input required="required" class="text-neutral-100 placeholder:text-neutral-400 bg-neutral-900 border-neutral-600 ring-0 hover:border-teal-800 appearance-none rounded-lg w-full p-4 focus:ring-teal-700 focus:border-teal-700 !text-sm py-2" placeholder="Enter Email" type="email" name="EMAIL" id="EMAIL" />
             <button type="submit" class="whitespace-nowrap bg-transparent ring-1 text-teal-300 ring-teal-400 hover:ring-2 hover:bg-neutral-800 hover:ring-teal-500 hover:text-teal-400 uppercase font-normal uppercase font-mono active:brightness-95 font-normal hover:subpixel-antialiased ring-inset px-4 py-1.5 text-sm rounded-lg gap-1">Subscribe</button>
 </form>          <div class="flex gap-4 items-center">
