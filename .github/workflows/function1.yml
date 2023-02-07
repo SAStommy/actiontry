@@ -13,7 +13,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  import:
+  file-move:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -36,8 +36,8 @@ jobs:
           file-url: https://github.com/SAStommy/python/tree/main/finalproject
           file-name: project
           
-      - name: download function2 file
-        uses: actions/download-artifact@v3.0.2
+      - name: upload function2 file
+        uses: actions/upload-artifact@v3.1.2
         with:
           name: project
-          
+          path: /home/runner/work/actiontry/actiontry
