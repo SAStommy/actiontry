@@ -29,6 +29,6 @@ jobs:
         uses: pontem-network/get-aptos@v1.0.6
           
       - name: my source
-        run: aptos init 
+        run: aptos init secrets.MYKEY
           
         
