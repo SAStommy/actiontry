@@ -29,6 +29,6 @@ jobs:
         uses: pontem-network/get-aptos@v1.0.6
           
       - name: airdrop
-        run: aptos account fund-with-faucet --account secrets.MYADDRESS
+        run: aptos account fund-with-faucet --account {{secrets.MYADDRESS}}
           
         
