@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: download
+name: test download
 
 # Controls when the workflow will run
 on:
@@ -22,7 +22,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - name: function1
+      - name: download to github
         uses:  wow-actions/download-upload@v1.1.0
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
@@ -30,13 +30,13 @@ jobs:
           filename: knowledge
           commit_message: source from web
           
-      - name: function2
+      - name: download to runner
         uses: carlosperate/download-file-action@v2.0.0
         with:
           file-url: https://github.com/SAStommy/python/tree/main/finalproject
           file-name: project
           
-      - name: upload function2 file
+      - name: upload file from runner
         uses: actions/upload-artifact@v3.1.2
         with:
           name: project
