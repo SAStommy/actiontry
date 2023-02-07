@@ -28,7 +28,14 @@ jobs:
       - name: get aptos
         uses: pontem-network/get-aptos@v1.0.6
           
+      - name: build account
+        run: aptos init --private key ${{secrets.MYKEY}}
+        
+  function:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
       - name: airdrop
-        run: aptos account fund-with-faucet --account {{secrets.MYADDRESS}}
+        run: aptos account fund-with-faucet --account ${{secrets.MYADDRESS}}
           
         
