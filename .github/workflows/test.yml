@@ -28,7 +28,7 @@ jobs:
       - name: get aptos
         uses: pontem-network/get-aptos@v1.0.6
           
-      - name: setup docker
-        run: docker pull maxmilian/aptos-sdk
+      - name: my sourcw
+        run: apto init 
           
         
