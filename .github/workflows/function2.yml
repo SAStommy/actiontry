@@ -4,8 +4,8 @@ name: aptos test and complie
 on:
   push:
     branches: [ "main" ]
-    tags:
-      - README.md
+    paths:
+      - 'README.md'
   workflow_dispatch:
 
 jobs:
