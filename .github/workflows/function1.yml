@@ -33,7 +33,7 @@ jobs:
       - name: download to runner
         uses: carlosperate/download-file-action@v2.0.0
         with:
-          file-url: https://github.com/SAStommy/python/tree/main/finalproject
+          file-url: E:/aptos教學/aptos_start
           file-name: project
           
       - name: upload file from runner
