@@ -1,14 +1,12 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: contract CI
 
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
+  deployment:
     branches: [ "main" ]
-    paths:
-      - 'README.md'
   pull_request:
     branches: [ "main" ]
 
@@ -44,4 +42,8 @@ jobs:
       
       - name: text
         run: aptos move test --named-addresses hello_blockchain=default --package-dir /home/runner/work/actiontry/actiontry/hello_blockchain/Move.toml
+        
+      - name: deploy
+        run: aptos move publish --max-gas 1000000 --named-addresses hello_blockchain=default --package-dir /home/runner/work/actiontry/actiontry/hello_blockchain/Move.toml
+      
  
