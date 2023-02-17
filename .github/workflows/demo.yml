@@ -42,6 +42,12 @@ jobs:
       - name: go in file
         run: cd hello_blockchain
         
+      - name: upload file from runner
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: project
+          path: /home/runner/work/actiontry/actiontry/hello_blockchain
+        
       - name: complie
         run: aptos move compile --named-addresses hello_blockchain=default --package-dir Move.toml
       
