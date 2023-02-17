@@ -46,6 +46,8 @@ jobs:
         run: aptos move test --named-addresses hello_blockchain=default --package-dir /home/runner/work/actiontry/actiontry/hello_blockchain/Move.toml
         
       - name: deploy
-        run: aptos move publish --named-addresses hello_blockchain=default --package-dir /home/runner/work/actiontry/actiontry/hello_blockchain/Move.toml --gas-fee yes
+        run: | 
+              aptos move publish --named-addresses hello_blockchain=default --package-dir /home/runner/work/actiontry/actiontry/hello_blockchain/Move.toml
+              yes
       
  
