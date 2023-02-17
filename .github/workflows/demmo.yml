@@ -5,7 +5,7 @@ name: contract CI
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
-  deployment:
+  push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
@@ -36,7 +36,7 @@ jobs:
         
       - name: airdrop
         run: aptos account fund-with-faucet --account default
-        
+
       - name: complie
         run: aptos move compile --named-addresses hello_blockchain=default --package-dir /home/runner/work/actiontry/actiontry/hello_blockchain/Move.toml
         
@@ -47,6 +47,6 @@ jobs:
         run: aptos move clean --assume-yes
         
       - name: deploy
-        run: aptos move publish --named-addresses hello_blockchain=default --package-dir /home/runner/work/actiontry/actiontry/hello_blockchain/Move.toml --max-gas 1000000
+        run: aptos move publish --named-addresses hello_blockchain=default --package-dir /home/runner/work/actiontry/actiontry/hello_blockchain --max-gas 1000000
       
  
