@@ -37,7 +37,7 @@ jobs:
         run: aptos init --private-key ${{secrets.MYKEY}}
         
       - name: go in file
-        run: cd /home/runner/work/actiontry/actiontry/hello_blockchain
+        run: cd hello_blockchain
         
       - name: complie
         run: aptos move compile --named-addresses hello_blockchain=default
