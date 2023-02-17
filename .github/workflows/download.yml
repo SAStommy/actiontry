@@ -33,8 +33,9 @@ jobs:
       - name: download to runner
         uses: carlosperate/download-file-action@v2.0.0
         with:
-          file-url: https://github.com/SAStommy/python/tree/main/finalproject
+          file-url: https://github.com/SAStommy/python.git
           file-name: project
+          
       - name: text
         uses: actions/download-artifact@v3.0.2
           
