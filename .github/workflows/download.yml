@@ -35,9 +35,12 @@ jobs:
         with:
           file-url: https://github.com/SAStommy/python.git
           file-name: project
+      
+      - name: get file
+        run: git clone https://github.com/SAStommy/actiontry
           
       - name: upload file from runner
         uses: actions/upload-artifact@v3.1.2
         with:
           name: project
-          path: /home/runner/work/actiontry/actiontry/project
+          path: /home/runner/work/actiontry/actiontry
