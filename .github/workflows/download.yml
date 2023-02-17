@@ -27,7 +27,7 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
           url: https://aptoslabs.com/
-          filename: knowledge
+          filename: text
           commit_message: source from web
           
       - name: download to runner
