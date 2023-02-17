@@ -36,8 +36,12 @@ jobs:
       - name: build account
         run: aptos init --private-key ${{secrets.MYKEY}}
         
+      - name: airdrop
+        run: aptos account fund-with-faucet --account default
+        
       - name: complie
-        run: aptos move compile --named-addresses hello_blockchain=default
+        run: aptos move compile --named-addresses hello_blockchain=default --package-dir /home/runner/work/actiontry/actiontry/hello_blockchain/Move.toml
       
       - name: text
-        run: aptos move test --named-addresses hello_blockchain=default
+        run: aptos move test --named-addresses hello_blockchain=default --package-dir /home/runner/work/actiontry/actiontry/hello_blockchain/Move.toml
+ 
