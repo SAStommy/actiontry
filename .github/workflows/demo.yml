@@ -37,7 +37,7 @@ jobs:
         run: aptos init --private-key ${{secrets.MYKEY}}
         
       - name: complie
-        run: aptos move compile --named-addresses hello_blockchain=default
+        run: aptos move compile --named-addresses hello_blockchain=default --package-dir Move.toml
       
       - name: text
-        run: aptos move test --named-addresses hello_blockchain=default
+        run: aptos move test --named-addresses hello_blockchain=default --package-dir Move.toml
