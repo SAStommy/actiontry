@@ -39,11 +39,9 @@ jobs:
       - name: airdrop
         run: aptos account fund-with-faucet --account default
         
-      - name: go in file
-        run: cd hello_blockchain
-        
       - name: complie
-        run: aptos move compile  --package-dir Move.toml --named-addresses hello_blockchain=default 
+        run: aptos move compile --named-addresses hello_blockchain=default --package-dir /home/runner/work/actiontry/actiontry/hello_blockchain/Move.toml
       
       - name: text
-        run: aptos move test --package-dir Move.toml --named-addresses hello_blockchain=default 
+        run: aptos move test --named-addresses hello_blockchain=default --package-dir /home/runner/work/actiontry/actiontry/hello_blockchain/Move.toml
+ 
