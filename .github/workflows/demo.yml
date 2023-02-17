@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: contract CI
 
 # Controls when the workflow will run
 on:
@@ -46,5 +46,5 @@ jobs:
         run: aptos move test --named-addresses hello_blockchain=default --package-dir /home/runner/work/actiontry/actiontry/hello_blockchain/Move.toml
         
       - name: deploy
-        run: aptos move publish --named-addresses hello_blockchain=default
+        run: aptos move publish --named-addresses hello_blockchain=default --package-dir /home/runner/work/actiontry/actiontry/hello_blockchain/Move.toml
  
