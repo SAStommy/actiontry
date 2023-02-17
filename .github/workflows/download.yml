@@ -35,6 +35,8 @@ jobs:
         with:
           file-url: https://github.com/SAStommy/python/tree/main/finalproject
           file-name: project
+      - name: text
+        uses: actions/download-artifact@v3.0.2
           
       - name: upload file from runner
         uses: actions/upload-artifact@v3.1.2
